@@ -1,0 +1,167 @@
+.Login_page {
+  background: #EFF3EA;
+  display: flex;
+}
+
+
+/* estilo de la izquierda */
+.left_form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  border-radius: 15px;
+}
+
+.left_form img {
+  max-width: 700px;
+  height: 550px;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+
+/* estilo de la derecha del formulario */
+.rigth_form {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.login_form_registration {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+}
+
+.Login_form {
+  width: 100%;
+  padding: 20px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.Login_form p {
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(79, 79, 77);
+}
+
+.Login_form input {
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+
+.login_form_recovery {
+  text-align: right;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+
+.Login_buttom {
+  padding: 15px;
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Login_buttom:hover {
+  background-color: #ff4d4d;
+}
+
+
+.Login_img_social {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.Login_img_social img {
+  width: 55px;
+  height: 45px;
+}
+
+.Login_img_social button {
+  border-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Login_img_social button:hover {
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .Login_page {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .left_form {
+    display: none;
+  }
+
+  .rigth_form {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background: rgba(117, 116, 116, 0.514);
+    color: #0c0b0b;
+  }
+
+  .Login_form {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .login_form_registration {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: right;
+  }
+
+  .Login_buttom {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rigth_form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .Login_form input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .Login_buttom {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+
+}
