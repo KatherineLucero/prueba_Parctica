@@ -1,6 +1,7 @@
 .Login_page {
   background: #EFF3EA;
   display: flex;
+  min-height: 100vh;
 }
 
 
@@ -16,7 +17,7 @@
 
 .left_form img {
   max-width: 700px;
-  height: 550px;
+  height: auto;
   border-radius: 10px;
   margin: 15px;
 }
